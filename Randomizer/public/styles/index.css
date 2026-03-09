@@ -1,0 +1,173 @@
+@font-face {
+    font-family: firaCode;
+    src: url("../fonts/FiraCode-Medium.ttf");
+}
+
+* {
+    font-family: "firaCode", monospace;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+.title-div .container {
+    box-shadow: rgb(22 31 39 / 42%) 0px 40px 22px -12px,
+    rgb(19 26 32 / 18%) 0px 35px 73px -121px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+}
+
+.title-div .container:hover {
+    transition: 2s;
+    box-shadow: 0px 0px 20px 3px rgb(0, 0, 0);
+    background-color: #2a2d2f;
+    color: white;
+    animation: animate-bg 1600ms ease-in-out;
+}
+
+.home-div {
+
+}
+
+@keyframes animate-bg {
+    50% {
+        transform: rotateX(10deg);
+        border-radius: 15%;
+    }
+}
+
+.page-navigator{
+    text-decoration: none;
+    color: #212529;
+}
+
+.response-area{
+    background-color: black;
+    color: white;
+}
+
+.nav-ref{
+    color: #212529;
+}
+
+.nav-ref:hover {
+    transition: 0.7s;
+    text-decoration: none;
+    color: white;
+    box-shadow: #000000 0px 0px 0px 2px inset, rgb(255, 255, 255) 4px -4px 0px -3px,
+    #7c8789 4px -4px, rgb(255, 255, 255) 8px -8px 0px -3px,
+    #a6a6a6 8px -8px;
+}
+
+.home:hover{
+    color: #71f171;
+    box-shadow: #0a4e02 0px 0px 0px 2px inset, rgb(255, 255, 255) 4px -4px 0px -3px,
+    #2ab306 4px -4px, rgb(255, 255, 255) 8px -8px 0px -3px,
+    #00ff00 8px -8px;
+}
+.log-out:hover{
+    color: red;
+    box-shadow: #570a0a 0px 0px 0px 2px inset, rgb(255, 255, 255) 4px -4px 0px -3px,
+    #9a1212 4px -4px, rgb(255, 255, 255) 8px -8px 0px -3px,
+    #ff0000 8px -8px;
+}
+
+
+.login-box {
+    position: relative;
+    top: auto;
+    left: 50%;
+    width: 400px;
+    padding: 20px;
+    margin-top: 3%;
+    transform: translate(-50%, 0%);
+    background: rgba(0, 0, 0, 0.27);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+}
+
+.login-box a {
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: white;
+    color: #000000;
+}
+
+.login-box form #loginButton, a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*overflow: hidden;*/
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box a:hover {
+    color: #ffffff;
+}
+
+.login-box #loginButton:hover, a:hover {
+    background: #000000;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000,
+    0 0 25px #000000,
+    0 0 50px #000000,
+    0 0 100px #000000;
+}

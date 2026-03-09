@@ -1,0 +1,11 @@
+{
+    "require": {
+        "illuminate/database": "^8.82",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload": {
+        "classmap": [
+            "application/models"
+        ]
+    }
+}
